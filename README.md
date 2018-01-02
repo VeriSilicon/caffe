@@ -1,3 +1,25 @@
+# Caffe protobuf for ACUITY
+
+Various caffe forks uses different protobufs due to
+framework and layer customizations. In order for ACUITY
+to import from different Caffe forks, we merged several
+of these customized protobufs together to generate new
+caffe_pb2.py.
+
+> NOTE
+ This branch is only used for generating protobuf, it
+ does not contain layer implementation, so do not use
+ this repo as Caffe framework.
+
+> Caffe forks merged
+ - SSD <https://github.com/weiliu89/caffe>
+ - Enet <https://github.com/TimoSeamnn/caffe-enet>
+ - Segnet <https://github.com/alexgkendall/caffe-segnet>
+ - Faster-RCNN <https://github.com/sanghoon/caffe>
+
+> INSTRUCTIONS
+ Rebuild Caffe and use resulting caffe_pb2.py for ACUITY
+
 # Caffe
 
 [![Build Status](https://travis-ci.org/BVLC/caffe.svg?branch=master)](https://travis-ci.org/BVLC/caffe)
